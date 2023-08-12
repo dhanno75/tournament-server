@@ -4,8 +4,14 @@ import Tournament from "../models/tournamentModel.js";
 // Create Tournament
 export const createTournament = async (req, res) => {
   try {
-    const { tournamentName, startDate, endDate, status, participantsId } =
-      req.body;
+    const {
+      tournamentName,
+      startDate,
+      endDate,
+      status,
+      participantsId,
+      banner,
+    } = req.body;
     const currentDate = new Date().toISOString();
 
     if (startDate > endDate) {
@@ -20,6 +26,7 @@ export const createTournament = async (req, res) => {
         endDate,
         status: "upcoming",
         participantsId,
+        banner,
       });
 
       return res.status(201).json({

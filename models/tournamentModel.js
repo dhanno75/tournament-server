@@ -12,6 +12,7 @@ const tournamentSchema = new mongoose.Schema({
     },
   },
   participantsId: [mongoose.Schema.Types.ObjectId],
+  banner: String,
 });
 
 const Tournament = mongoose.model("Tournament", tournamentSchema);
