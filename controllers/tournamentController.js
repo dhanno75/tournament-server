@@ -8,7 +8,7 @@ export const createTournament = async (req, res) => {
       tournamentName,
       startDate,
       endDate,
-      status,
+      currentStatus,
       participantsId,
       banner,
     } = req.body;
@@ -24,7 +24,7 @@ export const createTournament = async (req, res) => {
         tournamentName,
         startDate,
         endDate,
-        status: "upcoming",
+        currentStatus: "upcoming",
         participantsId,
         banner:
           "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",

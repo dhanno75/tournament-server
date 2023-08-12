@@ -4,7 +4,7 @@ const tournamentSchema = new mongoose.Schema({
   tournamentName: String,
   startDate: Date,
   endDate: Date,
-  status: {
+  currentStatus: {
     type: String,
     enum: {
       values: ["ongoing", "over", "upcoming"],
