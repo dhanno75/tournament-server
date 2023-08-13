@@ -11,6 +11,7 @@ export const createTournament = async (req, res) => {
       currentStatus,
       participantsId,
       banner,
+      description,
     } = req.body;
     const currentDate = new Date().toISOString();
 
@@ -27,6 +28,7 @@ export const createTournament = async (req, res) => {
         currentStatus: "upcoming",
         participantsId,
         banner,
+        description,
       });
 
       return res.status(201).json({

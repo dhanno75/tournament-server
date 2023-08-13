@@ -12,6 +12,7 @@ const tournamentSchema = new mongoose.Schema({
     },
   },
   participantsId: [mongoose.Schema.Types.ObjectId],
+  description: String,
   banner: String,
 });
 
