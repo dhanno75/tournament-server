@@ -26,7 +26,7 @@ export const createTournament = async (req, res) => {
         endDate,
         currentStatus: "upcoming",
         participantsId,
-        banner: "",
+        banner,
       });
 
       return res.status(201).json({
