@@ -25,7 +25,7 @@ export const createTournament = async (req, res) => {
         tournamentName,
         startDate,
         endDate,
-        currentStatus: "upcoming",
+        currentStatus,
         participantsId,
         banner,
         description,
